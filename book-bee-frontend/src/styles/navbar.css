@@ -1,0 +1,55 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.navbar-container > .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container > .logo-container > .logo {
+  background-image: url('../assets/bookbee_logo.png');
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.navbar-container > .logo-container > h1 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.navbar-container > .navbar-ul > ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-container > .navbar-ul > ul > .active-li {
+  color: black;
+  text-decoration: underline;
+}
+
+.navbar-container > .navbar-ul > ul > li {
+  padding-right: 2em;
+  padding-bottom: 2px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1338px) {
+  .navbar-container > .navbar-ul {
+    display: none;
+  }
+}
