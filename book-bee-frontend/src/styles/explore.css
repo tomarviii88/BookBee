@@ -1,0 +1,72 @@
+.explore-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.explore-page-container > .explore-search-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.explore-page-container > .explore-search-container > input {
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.explore-page-container > .explore-genre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.explore-page-container > .explore-genre-container > .genre {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.explore-page-container > .explore-author-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.explore-page-container > .explore-author-container > .author {
+  width: 150px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.explore-page-container > .explore-author-container > .author > img {
+  width: 100%;
+  height: 170px;
+  border-radius: 7px;
+}
