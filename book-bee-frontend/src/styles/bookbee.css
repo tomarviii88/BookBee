@@ -1,0 +1,55 @@
+.book-bee-main-page-container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/bookshelf.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.book-bee-main-page-container > .book-bee-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.book-bee-main-page-container > .book-bee-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.book-bee-main-page-container > .book-bee-image > .welcome-text {
+  padding: 30px;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-bee-main-page-container > .book-bee-image > .welcome-text > h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 900;
+}
+
+.book-bee-main-page-container > .book-bee-image > .welcome-text > p {
+  font-size: 26px;
+  color: white;
+}
+
+.book-bee-main-page-container > .book-bee-image > .login-signup-container {
+  padding: 30px;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,195 @@
+.book-club-page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: whitesmoke;
+}
+
+.book-club-page-container > .book-club-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.book-club-page-container > .book-club-form-container > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.book-club-page-container > .book-club-form-container > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.book-club-page-container > .book-club-form-container > form > input {
+  border: none;
+  width: 80%;
+  height: 30px;
+  margin: 10px;
+  border-bottom: 1.4px solid rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.book-club-page-container > .book-club-form-container > form > textarea {
+  border: none;
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+  border-bottom: 1.4px solid rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.book-club-page-container > .book-club-form-container > form > button {
+  align-self: flex-start;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.book-club-page-container
+  > .book-club-form-container
+  > form
+  > input[type='submit'] {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.book-club-page-container > .bookclub-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.book-club-page-container > .bookclub-container > p {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book-club-page-container > .bookclub-container > .bookclubs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.book-club-page-container > .bookclub-container > .bookclubs > .book-club {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.book-club-page-container
+  > .bookclub-container
+  > .bookclubs
+  > .book-club
+  > .avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -40px;
+}
+
+.book-club-page-container
+  > .bookclub-container
+  > .bookclubs
+  > .book-club
+  > .avatar
+  > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.book-club-page-container
+  > .bookclub-container
+  > .bookclubs
+  > .book-club
+  > .title {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book-club-page-container
+  > .bookclub-container
+  > .bookclubs
+  > .book-club
+  > .join {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  width: 60px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.book-club-page-container
+  > .bookclub-container
+  > .bookclubs
+  > .book-club
+  > .description {
+  width: 400px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.book-club-page-container
+  > .bookclub-container
+  > .bookclubs
+  > .book-club
+  > .members {
+  align-self: flex-end;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 565px) {
+  .book-club-page-container > .book-club-form-container {
+    width: 100%;
+  }
+
+  .book-club-page-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .book-club-page-container
+    > .bookclub-container
+    > .bookclubs
+    > .book-club
+    > .description {
+    width: 90%;
+    font-size: 15px;
+    text-align: justify;
+  }
+}
