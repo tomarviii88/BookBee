@@ -37,11 +37,6 @@ const App = () => {
           }
         }
       ).then(tracksResponse => {
-        // setTracks({
-        //   selectedTrack: tracks.selectedTrack,
-        //   listOfTracksFromAPI: tracksResponse.data.items
-        // })
-        console.log('track', tracksResponse.data.items);
       });
       axios(
         `https://api.spotify.com/v1/browse/categories/${'wellness'}/playlists?limit=10`,
@@ -52,11 +47,6 @@ const App = () => {
           }
         }
       ).then(playlistResponse => {
-        // setPlaylist({
-        //   selectedPlaylist: playlist.selectedPlaylist,
-        //   listOfPlaylistFromAPI: playlistResponse.data.playlists.items
-        // })
-        console.log('playlist', playlistResponse.data.playlists.items);
       });
 
       axios('https://api.spotify.com/v1/browse/categories?locale=sv_US', {
