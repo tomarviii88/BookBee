@@ -53,10 +53,6 @@ const App = () => {
         method: 'GET',
         headers: { Authorization: 'Bearer ' + tokenResponse.data.access_token }
       }).then(genreResponse => {
-        // setGenres({
-        //   selectedGenre: genres.selectedGenre,
-        //   listOfGenresFromAPI: genreResponse.data.categories.items
-        // })
         console.log({
           //selectedGenre: genres.selectedGenre,
           listOfGenresFromAPI: genreResponse.data.categories.items
